@@ -1,0 +1,23 @@
+! Title: My Custom YouTube Ad Block List
+! Description: Custom filtering rules for YouTube ads, overlays, and clutter.
+! Expires: 1 days
+! Homepage: https://github.com
+
+! --- Network Ad Requests & Telemetry ---
+||youtube.com/api/stats/qoe?*
+||://youtube.com?*
+||://youtube.com?*
+||://youtube.com*
+||://google.com*
+
+! --- Cosmetic Filters (Elements Hiding) ---
+youtube.com##.video-ads
+youtube.com##.ytp-ad-module
+youtube.com##.ytp-ad-overlay-container
+youtube.com##ytd-merch-shelf-renderer
+youtube.com##ytd-companion-slot-renderer
+youtube.com##div#player-ads
+
+! --- Scriptlet Patches for Anti-Adblock Detection ---
+youtube.com##+js(set, yt.config_.ad_placements, null)
+youtube.com##+js(set, ytPlayer.config.args.ad_placements, null)
