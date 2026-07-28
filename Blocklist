@@ -96,3 +96,9 @@ supportmetrics.apple.com
 appmetrica.yandex.com
 stats.wp.com
 mouseflow.com/
+ads.js
+pagead.js
+advertisement.js
+analytics.js
+.adsbox .ad-banner #ad-container
+.adsbygoogle .google-ad
